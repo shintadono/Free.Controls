@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48131897-A6DB-4CB3-BE3B-1625380140AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Free.Controls</RootNamespace>
+    <AssemblyName>Free.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>StrongNameKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CheckGroupBoxCheckAction.cs" />
+    <Compile Include="Collapsible\CollapsibleContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Collapsible\CollapsibleContainerBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Collapsible\CollapsibleContainerBaseDesigner.cs" />
+    <Compile Include="Collapsible\CollapsibleContainerDesigner.cs" />
+    <Compile Include="Collapsible\CollapsibleContainerHeader.cs" />
+    <Compile Include="Collapsible\CollapsibleContainerPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Collapsible\CollapsibleContainerPanelDesigner.cs" />
+    <Compile Include="Collapsible\ICollapsibleContainerDesigner.cs" />
+    <Compile Include="CrumbBar\CrumbBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrumbBar\CrumbBarClickEventArgs.cs" />
+    <Compile Include="DataGridViewNumericUpDownColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BitmapComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DetailButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtendedListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Meta\ClientUtils.cs" />
+    <Compile Include="Meta\ReadOnlyControlCollection.cs" />
+    <Compile Include="Meta\TypedControlCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RangeBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SafeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchableCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FocusablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Splitter\TSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Splitter\TSplitContainerDesigner.cs" />
+    <Compile Include="Splitter\TSplitterPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Splitter\TSplitterPanelDesigner.cs" />
+    <Compile Include="Toolbox\Toolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Toolbox\ToolboxGroup.cs" />
+    <Compile Include="Toolbox\ToolboxItem.cs" />
+    <Compile Include="Toolbox\ToolboxItemBase.cs" />
+    <Compile Include="Toolbox\ToolboxType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Toolbox\Minus.png" />
+    <Content Include="Toolbox\Plus.png" />
+    <None Include="CrumbBar\Images\selected crumb right end.png" />
+    <None Include="CrumbBar\Images\selected crumb left end.png" />
+    <None Include="CrumbBar\Images\selected crumb body.png" />
+    <None Include="CrumbBar\Images\hovered crumb right point.png" />
+    <None Include="CrumbBar\Images\hovered crumb right end.png" />
+    <None Include="CrumbBar\Images\hovered crumb left end.png" />
+    <None Include="CrumbBar\Images\hovered crumb body.png" />
+    <None Include="CrumbBar\Images\crumb right point.png" />
+    <None Include="CrumbBar\Images\crumb right end.png" />
+    <None Include="CrumbBar\Images\crumb left end.png" />
+    <None Include="CrumbBar\Images\crumb body.png" />
+    <None Include="CrumbBar\Images\clicked crumb right point.png" />
+    <None Include="CrumbBar\Images\clicked crumb right end.png" />
+    <None Include="CrumbBar\Images\clicked crumb left end.png" />
+    <None Include="CrumbBar\Images\clicked crumb body.png" />
+    <None Include="CrumbBar\Images\selected crumb right point.png" />
+    <EmbeddedResource Include="Collapsible\CollapsibleContainer.bmp" />
+    <Content Include="Collapsible\Collapse.png" />
+    <Content Include="Collapsible\Expand.png" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+    <None Include="StrongNameKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendedListView.resx">
+      <DependentUpon>ExtendedListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
