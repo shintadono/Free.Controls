@@ -122,7 +122,6 @@
     <Compile Include="Toolbox\ToolboxType.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
     <Content Include="Toolbox\Minus.png" />
     <Content Include="Toolbox\Plus.png" />
     <None Include="CrumbBar\Images\selected crumb right end.png" />
