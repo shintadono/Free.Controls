@@ -54,7 +54,7 @@ namespace Free.Controls
 		protected override bool IsInputKey(Keys keyData)
 		{
 			//if(keyData==Keys.Up||keyData==Keys.Down||keyData==Keys.Left||keyData==Keys.Right) return true;
-			if(keyData==Keys.Enter) return true;
+			if(keyData==Keys.Enter||keyData==Keys.Space) return true;
 			return base.IsInputKey(keyData);
 		}
 
@@ -68,6 +68,17 @@ namespace Free.Controls
 		{
 			this.Invalidate();
 			base.OnGotFocus(e);
+		}
+
+		protected override void OnKeyDown(KeyEventArgs e)
+		{
+			if(e.KeyCode==Keys.Enter||e.KeyCode==Keys.Space)
+			{
+				OnClick(e);
+				e.Handled=true;
+				return;
+			}
+			base.OnKeyDown(e);
 		}
 
 		protected override void OnLeave(EventArgs e)
