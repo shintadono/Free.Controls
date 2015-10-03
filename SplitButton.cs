@@ -394,11 +394,11 @@ namespace Free.Controls
 			dropDownRectangle=new Rectangle(bounds.Right-SplitSectionWidth, 0, SplitSectionWidth, bounds.Height);
 
 			int internalBorder=BorderSize;
-			Rectangle focusRect=
-				new Rectangle(internalBorder-1,
-							  internalBorder-1,
-							  bounds.Width-dropDownRectangle.Width-internalBorder,
-							  bounds.Height-(internalBorder*2)+2);
+			Rectangle focusRect=new Rectangle(
+				internalBorder-1,
+				internalBorder-1,
+				bounds.Width-dropDownRectangle.Width-internalBorder,
+				bounds.Height-(internalBorder*2)+2);
 
 			bool drawSplitLine=(State==PushButtonState.Hot||State==PushButtonState.Pressed||!Application.RenderWithVisualStyles);
 

@@ -306,7 +306,7 @@ namespace Free.Controls
 		}
 
 		/// <summary>
-		///  Gets and sets the number of divisions.
+		/// Gets and sets the number of divisions.
 		/// </summary>
 		[DefaultValue(10)]
 		public int Divisions
@@ -338,7 +338,7 @@ namespace Free.Controls
 		}
 
 		/// <summary>
-		///  Gets and sets the color of the range.
+		/// Gets and sets the color of the range.
 		/// </summary>
 		public Color RangeColor
 		{
@@ -351,7 +351,7 @@ namespace Free.Controls
 		}
 
 		/// <summary>
-		///  Gets and sets the color of the range, if control is disabled.
+		/// Gets and sets the color of the range, if control is disabled.
 		/// </summary>
 		public Color RangeColorInactive
 		{

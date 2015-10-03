@@ -195,7 +195,7 @@ namespace Free.Controls.Splitter
 		}
 
 		#region Methods
-		// Funktionalität mit TSplitterPanel.OnControlRemoved realisiert (da override nicht möglich)
+		// Done that in TSplitterPanel.OnControlRemoved since override not possible.
 		//internal override void AfterControlRemoved(Control control, Control oldParent)
 		//{
 		//    base.AfterControlRemoved(control, oldParent);
